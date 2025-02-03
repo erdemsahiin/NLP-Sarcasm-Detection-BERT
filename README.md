@@ -2,7 +2,7 @@
 **Understanding Sarcasm in Political Discourse using NLP and Transformer-based Models**  
 
 ## 📌 Overview  
-This repository contains the implementation of a **BERT-based sarcasm detection model** for analyzing political discourse on the **Ekşi Sözlük** platform. The project explores how sarcasm is used as a critique tool in online political discussions, particularly focusing on **Recep Tayyip Erdoğan** and **Kemal Kılıçdaroğlu**.
+This repository contains the implementation of a **BERT-based sarcasm detection model** for analyzing political discourse on the **Ekşi Sözlük** platform. The project explores how sarcasm is used as a critique tool in online political discussions, particularly focusing on comparative analysis between **Recep Tayyip Erdoğan** and **Kemal Kılıçdaroğlu**.
 
 ## 🚀 Key Features  
 ✅ **BERT-based Sarcasm Detection:** Fine-tuning **Bidirectional Encoder Representations from Transformers (BERT)** to identify sarcastic comments.  
@@ -11,26 +11,27 @@ This repository contains the implementation of a **BERT-based sarcasm detection 
 ✅ **Model Training & Performance Evaluation:** Evaluating BERT’s accuracy and effectiveness compared to other NLP models.  
 
 
+---
+
 ## 📊 Dataset & Preprocessing  
 ### 📌 **Dataset Information**  
-- The dataset is sourced from **Ekşi Sözlük**, a widely used online discussion platform in Türkiye.  
-- It focuses on discussions about **Recep Tayyip Erdoğan** and **Kemal Kılıçdaroğlu**, covering **153,882 entries**.  
-- The final **filtered dataset** consists of **107,432 entries**, ensuring high-quality text data for sarcasm detection&#8203;:contentReference[oaicite:0]{index=0}.  
+- The dataset is sourced from **Ekşi Sözlük**, focusing on discussions about **Recep Tayyip Erdoğan** and **Kemal Kılıçdaroğlu**.  
+- It contains **153,882** raw entries, which were **preprocessed and filtered down to 107,432 high-quality entries**.  
+- **Irrelevant data (URLs, repetitive authors, references)** were removed to improve model accuracy.
 
 ### 🔄 **Preprocessing Steps**  
-✔ **Removing biased authors:** Eliminated **30,525 entries** from prolific users to ensure balanced data.  
+✔ **Removing biased authors:** Eliminated **30,525 entries** from prolific users.  
 ✔ **Filtering URLs and references:** Removed **4,066 reference-only entries** and **376 URL-only entries**.  
-✔ **Length normalization:** Excluded entries shorter than **38 characters** or longer than **1,243 characters** to optimize performance.  
-✔ **Tokenization & Normalization:** Applied **WordPiece Tokenization** and **BERT-compatible preprocessing**.  
+✔ **Length normalization:** Kept entries between **38–1,243 characters**.  
+✔ **Tokenization & Normalization:** Applied **WordPiece Tokenization** and **BERT-compatible text processing**.
 
+---
 
 ## 🏗️ Methodology  
-The sarcasm detection task is formulated as a **binary classification problem**:  
-- **𝑆 = {𝑠1, 𝑠2, . . . , 𝑠𝑙} → 𝑌 = {0,1}** where  
+- **Sarcasm detection is formulated as a binary classification task**:
   - `0 = Non-Sarcastic`
-  - `1 = Sarcastic`  
-- **Fine-tuning BERT:** The model learns sarcasm-specific **linguistic patterns**, identifying irony and contradictions.  
-- **Hybrid Enhancements:** Used **Graph Convolutional Networks (GCNs)** and **Attention Mechanisms** to improve sarcasm context understanding&#8203;:contentReference[oaicite:1]{index=1}.  
+  - `1 = Sarcastic`
+- **Fine-tuning BERT:** The model learns sarcasm-specific **linguistic patterns**, identifying irony and contradictions.
 
 ---
 
@@ -44,6 +45,47 @@ The sarcasm detection task is formulated as a **binary classification problem**:
 
 - **Sarcasm Trends by Political Figure**  
   - **28.1%** of Erdoğan-related entries were sarcastic.  
-  - **9.2%** of Kılıçdaroğlu-related entries were sarcastic&#8203;:contentReference[oaicite:2]{index=2}.  
-  - **Sarcasm peaks** during political and economic crises, indicating shifts in public sentiment.  
+  - **9.2%** of Kılıçdaroğlu-related entries were sarcastic.  
+  - **Sarcasm peaked during political and economic crises, indicating shifts in public sentiment**.
+
+---
+
+## 📢 Conclusion  
+
+### **Political Trends in Sarcasm Usage**  
+The model identified a **major disparity** in sarcasm usage between political figures:  
+
+- **Erdoğan-related entries had significantly more sarcasm (28.1%) compared to Kılıçdaroğlu (9.2%)**.  
+- This suggests that **sarcasm is frequently used as an indirect tool of political criticism**, particularly targeting those in power.  
+- **Criticism of opposition figures is lower**, indicating that sarcasm is a reaction to governance rather than opposition politics.
+
+### **Why Is Sarcasm More Common for Erdoğan?**  
+📌 **Heightened Political Criticism:**  
+   - Erdoğan’s **central role in governance for over two decades** has made him a **prime target for public scrutiny**.  
+   - Sarcasm allows for **indirect criticism**, especially in environments where **direct dissent is risky**.
+
+📌 **Sarcasm Peaks During Political and Economic Crises:**  
+   - **2018 Constitutional Reforms:** Led to increased sarcasm as executive powers expanded.  
+   - **2019 Economic Crisis:** High inflation and government policies sparked sarcastic critiques like *"Erdoğan’s economic miracles"*.  
+   - **2023 Elections:** Sarcasm peaked as Erdoğan won another term despite growing public discontent.
+
+📌 **Differences Between Erdoğan & Kılıçdaroğlu in Sarcasm Trends:**  
+   - **For Erdoğan**, sarcasm is **continuous and long-term**, reflecting **sustained dissatisfaction with governance**.  
+   - **For Kılıçdaroğlu**, sarcasm is **situational**, mainly spiking during **elections or specific controversies**.
+
+### **Broader Implications & Future Research**  
+📌 **Can sarcasm predict political shifts?**  
+   - The study suggests that spikes in sarcasm could be an **early warning signal of public discontent**.  
+   - Future research could examine whether sarcasm trends **correlate with democratic backsliding**.  
+
+📌 **How can sarcasm detection models improve?**  
+   - Integrate **multimodal sarcasm cues** (e.g., emojis, memes, GIFs).  
+   - Expand analysis to **other politically sensitive environments (Russia, Hungary, India, etc.)**.  
+
+📌 **Final Thought**  
+This study highlights **sarcasm as both a technical NLP challenge and a sociopolitical tool**. **Sarcasm is not just humor—it reflects political sentiment, resistance, and shifts in public perception.**
+
+---
+
+
 
