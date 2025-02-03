@@ -44,6 +44,12 @@ This repository contains the implementation of a **BERT-based sarcasm detection 
 | 1,038           | 405                          | 0.77      | 0.76   | 0.76     | 0.82     |
 | **2,529**       | **864**                      | **0.79**  | **0.82**| **0.80** | **0.86** |
 
+### **Sarcasm Trends by Political Figure**  
+| Figure              | Total Entries | Sarcasm Rate |  
+|---------------------|---------------|--------------|  
+| **Recep Tayyip Erdoğan** | 57,319        | **28.1%**    |  
+| **Kemal Kılıçdaroğlu**   | 50,113        | **9.2%**     |  
+
 - **Sarcasm Trends by Political Figure**  
   - **28.1%** of Erdoğan-related entries were sarcastic.  
   - **9.2%** of Kılıçdaroğlu-related entries were sarcastic.  
