@@ -36,8 +36,9 @@ This repository contains the implementation of a **BERT-based sarcasm detection 
 
 
 
-## 📈 Results & Performance  
+## 📈 Results 
 
+### **Model Performance Metrics** 
 | Number of Entries | Annotated Sarcastic Entries | Precision | Recall | F1-Score | Accuracy |
 |------------------|----------------------------|-----------|--------|----------|----------|
 | 908             | 312                          | 0.77      | 0.53   | 0.63     | 0.79     |
@@ -49,12 +50,6 @@ This repository contains the implementation of a **BERT-based sarcasm detection 
 |---------------------|---------------|--------------|  
 | **Recep Tayyip Erdoğan** | 57,319        | **28.1%**    |  
 | **Kemal Kılıçdaroğlu**   | 50,113        | **9.2%**     |  
-
-- **Sarcasm Trends by Political Figure**  
-  - **28.1%** of Erdoğan-related entries were sarcastic.  
-  - **9.2%** of Kılıçdaroğlu-related entries were sarcastic.  
-  - **Sarcasm peaked during political and economic crises, indicating shifts in public sentiment**.
-
 
 
 ## 📢 Conclusion  
@@ -79,15 +74,3 @@ The model identified a **major disparity** in sarcasm usage between political fi
 📌 **Differences Between Erdoğan & Kılıçdaroğlu in Sarcasm Trends:**  
    - **For Erdoğan**, sarcasm is **continuous and long-term**, reflecting **sustained dissatisfaction with governance**.  
    - **For Kılıçdaroğlu**, sarcasm is **situational**, mainly spiking during **elections or specific controversies**.
-
-### **Broader Implications & Future Research**  
-📌 **Can sarcasm predict political shifts?**  
-   - The study suggests that spikes in sarcasm could be an **early warning signal of public discontent**.  
-   - Future research could examine whether sarcasm trends **correlate with democratic backsliding**.  
-
-📌 **How can sarcasm detection models improve?**  
-   - Integrate **multimodal sarcasm cues** (e.g., emojis, memes, GIFs).  
-   - Expand analysis to **other politically sensitive environments (Russia, Hungary, India, etc.)**.  
-
-📌 **Final Thought**  
-This study highlights **sarcasm as both a technical NLP challenge and a sociopolitical tool**. **Sarcasm is not just humor—it reflects political sentiment, resistance, and shifts in public perception.**
