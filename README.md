@@ -11,8 +11,6 @@ This repository contains the implementation of a **BERT-based sarcasm detection 
 ✅ **Model Training & Performance Evaluation:** Evaluating BERT’s accuracy and effectiveness compared to other NLP models.  
 
 
----
-
 ## 📊 Dataset & Preprocessing  
 ### 📌 **Dataset Information**  
 - The dataset is sourced from **Ekşi Sözlük**, focusing on discussions about **Recep Tayyip Erdoğan** and **Kemal Kılıçdaroğlu**.  
@@ -25,7 +23,6 @@ This repository contains the implementation of a **BERT-based sarcasm detection 
 ✔ **Length normalization:** Kept entries between **38–1,243 characters**.  
 ✔ **Tokenization & Normalization:** Applied **WordPiece Tokenization** and **BERT-compatible text processing**.
 
----
 
 ## 🏗️ Methodology  
 - **Sarcasm detection is formulated as a binary classification task**:
@@ -33,7 +30,6 @@ This repository contains the implementation of a **BERT-based sarcasm detection 
   - `1 = Sarcastic`
 - **Fine-tuning BERT:** The model learns sarcasm-specific **linguistic patterns**, identifying irony and contradictions.
 
----
 
 ## 📈 Results & Performance  
 
@@ -48,7 +44,6 @@ This repository contains the implementation of a **BERT-based sarcasm detection 
   - **9.2%** of Kılıçdaroğlu-related entries were sarcastic.  
   - **Sarcasm peaked during political and economic crises, indicating shifts in public sentiment**.
 
----
 
 ## 📢 Conclusion  
 
@@ -84,8 +79,3 @@ The model identified a **major disparity** in sarcasm usage between political fi
 
 📌 **Final Thought**  
 This study highlights **sarcasm as both a technical NLP challenge and a sociopolitical tool**. **Sarcasm is not just humor—it reflects political sentiment, resistance, and shifts in public perception.**
-
----
-
-
-
