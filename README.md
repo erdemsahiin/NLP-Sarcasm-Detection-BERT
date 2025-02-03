@@ -11,8 +11,6 @@ This repository contains the implementation of a **BERT-based sarcasm detection 
 ✅ **Model Training & Performance Evaluation:** Evaluating BERT’s accuracy and effectiveness compared to other NLP models.  
 
 
----
-
 ## 📊 Dataset & Preprocessing  
 ### 📌 **Dataset Information**  
 - The dataset is sourced from **Ekşi Sözlük**, a widely used online discussion platform in Türkiye.  
@@ -25,7 +23,6 @@ This repository contains the implementation of a **BERT-based sarcasm detection 
 ✔ **Length normalization:** Excluded entries shorter than **38 characters** or longer than **1,243 characters** to optimize performance.  
 ✔ **Tokenization & Normalization:** Applied **WordPiece Tokenization** and **BERT-compatible preprocessing**.  
 
----
 
 ## 🏗️ Methodology  
 The sarcasm detection task is formulated as a **binary classification problem**:  
