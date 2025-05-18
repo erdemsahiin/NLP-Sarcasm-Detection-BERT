@@ -1,4 +1,4 @@
-# NLP Sarcasm Detection using BERT  
+# NLP Sarcasm Detection using BERT & ELECTRA Turkish Models
 **Understanding Sarcasm in Political Discourse using NLP and Transformer-based Models**  
 
 ## 📌 Overview  
